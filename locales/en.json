@@ -1,0 +1,106 @@
+{
+  "ERROR": {
+    "SERVER": "Error, try again!"
+  },
+  "MAIL_SERVICE": {
+    "SUBJECT": "Account activation on the site {link}",
+    "TEXT": "Hello, you have registered on the site {link}. To activate your account and start working in the system, click the button",
+    "BUTTON": "Activate"
+  },
+  "CONTROLLER": {
+    "CLIENT": {
+      "REGISTRATION": {
+        "EMPTY": "Complete the form!",
+        "USERNAME": {
+          "ERROR": "Username must contain only English letters and numbers",
+          "AVAILABLE": "User with this username is registered"
+        },
+        "EMAIL": {
+          "ERROR": "Invalid email",
+          "AVAILABLE": "User with this email is registered"
+        },
+        "PASSWORD": {
+          "NOT_MATCH": "Passwords do not match!",
+          "LONG": "Password must be longer than 4 characters!",
+          "SHORT": "The password must be shorter than 32 characters!"
+        }
+      },
+      "LOGIN": {
+        "EMPTY": "Complete the form!",
+        "EMAIL": "Invalid email",
+        "NOT_USER": "User with this email was not found",
+        "NOT_MATCH_PASSWORD": "Incorrect password"
+      },
+      "ACTIVATE": {
+        "LINK": "Incorrect activation link"
+      },
+      "SEND_CODE": {
+        "NOT_USER": "Can't find your email, contact admin"
+      },
+      "GET": {
+        "NOT_FOUND": "User is not found"
+      },
+      "UPDATE": {
+        "USERNAME": {
+          "ERROR": "Username must contain only English letters and numbers",
+          "AVAILABLE": "User with this username is registered"
+        },
+        "EMAIL": {
+          "ERROR": "Invalid email",
+          "AVAILABLE": "User with this email is registered"
+        },
+        "PASSWORD": {
+          "EMPTY": "Enter your password to make changes",
+          "NOT_MATCH": "Incorrect password",
+          "LONG": "Password must be longer than 4 characters!",
+          "SHORT": "The password must be shorter than 32 characters!"
+        }
+      }
+    },
+    "USER": {
+      "CREATE": {
+        "EMPTY": "Complete the form!",
+        "USERNAME": {
+          "ERROR": "Username must contain only English letters and numbers",
+          "AVAILABLE": "User with this username is registered"
+        },
+        "EMAIL": {
+          "ERROR": "Invalid email",
+          "AVAILABLE": "User with this email is registered"
+        },
+        "PASSWORD": {
+          "LONG": "Password must be longer than 4 characters!",
+          "SHORT": "The password must be shorter than 32 characters!"
+        }
+      },
+      "UPDATE": {
+        "NOT_FOUND": "User is not found"
+      },
+      "DELETE": {
+        "NOT_FOUND": "User is not found"
+      }
+    },
+    "TEAM": {
+      "HAS_ALREADY": "This name is already taken",
+      "NOT_FOUND": "Team not found",
+      "BEARER_INVALID": "bearer invalid"
+    },
+    "ROLE": {
+      "HAS_ALREADY": "This name is already taken",
+      "NOT_FOUND": "Role not found",
+      "NOT_PERMISSIONS": "Role must have at least 1 permission"
+    },
+    "COUNTRY": {
+      "HAS_ALREADY": "This name is already taken",
+      "NOT_FOUND": "County not found"
+    },
+    "PRODUCT": {
+      "HAS_ALREADY": "This name is already taken",
+      "NOT_FOUND": "Product not found"
+    },
+    "CATEGORY": {
+      "HAS_ALREADY": "This name is already taken",
+      "NOT_FOUND": "Category not found"
+    }
+  }
+}
