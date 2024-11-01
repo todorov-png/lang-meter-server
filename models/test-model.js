@@ -5,6 +5,7 @@ const testSchema = new Schema(
   {
     name: { type: String, required: true },
     lang: { type: String, required: true },
+    time: { type: Number, default: 0 },
     questions: [
       {
         title: { type: String, required: true },
