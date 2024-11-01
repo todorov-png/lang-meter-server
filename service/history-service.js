@@ -6,7 +6,7 @@ class HistoryService {
   }
 
   async getUserAll(id) {
-    return await HistoryModel.find({ user: id }).populate('test', ['name']);
+    return await HistoryModel.find({ user: id }).populate('test', ['name', 'lang']);
   }
 }
 
