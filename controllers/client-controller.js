@@ -2,6 +2,7 @@ import mailService from '../service/mail-service.js';
 import tokenService from '../service/token-service.js';
 import historyService from '../service/history-service.js';
 import clientService from '../service/client-service.js';
+import gptService from '../service/gpt-service.js';
 import ApiError from '../exceptions/api-error.js';
 import UserDto from '../dtos/user-dto.js';
 import bcrypt from 'bcrypt';
@@ -280,6 +281,20 @@ class ClientController {
       }
       const userData = tokenService.validateRefresh(refreshToken);
       const data = await historyService.getUserAll(userData.id);
+      return res.json(data);
+    } catch (e) {
+      next(e);
+    }
+  }
+
+  async sendGPTMessage(req, res, next) {
+    try {
+      const { refreshToken } = req.cookies;
+      if (!refreshToken) {
+        throw ApiError.UnauthorizedError();
+      }
+      const { text } = req.body;
+      const data = await gptService.sendMessage(text);
       return res.json(data);
     } catch (e) {
       next(e);

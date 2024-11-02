@@ -13,5 +13,6 @@ router.post('/activation-code', authMiddleware, ClientController.sendNewActivati
 router.put('/user/edit', authMiddleware, ClientController.update);
 router.get('/history/all', authMiddleware, ClientController.getHistoryAll);
 router.post('/history', authMiddleware, ClientController.createHistory);
+router.post('/gpt', authMiddleware, ClientController.sendGPTMessage);
 
 export default router;
